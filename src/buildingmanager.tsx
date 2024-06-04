@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Buildingmanager.css';
+import './buildingmanager.css';
 
 function BuildingManager() {
   const [expandable, setExpandable] = useState(false);
