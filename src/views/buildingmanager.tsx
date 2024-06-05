@@ -1,17 +1,14 @@
-import React, { useState } from 'react';
-import '../assets/styles/buildingmanager.css';
+import React from 'react';
 
-function BuildingManager() {
-  const [expandable, setExpandable] = useState(false);
-  const [downsizeable, setDownsizeable] = useState(false);
-
+const BuildingManager: React.FC = () => {
   return (
-    <div className="building-manager min-vh-100">
+    <div className="building-manager">
       <h1>Fábrica de construção</h1>
       <div className="stats">
         <div className="stat">
           <h2>Profit</h2>
           <p>$450</p>
+          <p>Profit = Output - Input - Manpower</p>
         </div>
         <div className="stat">
           <h2>Manpower</h2>
@@ -27,29 +24,21 @@ function BuildingManager() {
         </div>
       </div>
       <div className="controls">
-        <div className="control">
-          <label>Expandable</label>
-          <input
-            type="checkbox"
-            checked={expandable}
-            onChange={() => setExpandable(!expandable)}
-          />
-        </div>
-        <div className="control">
-          <label>Downsizeable</label>
-          <input
-            type="checkbox"
-            checked={downsizeable}
-            onChange={() => setDownsizeable(!downsizeable)}
-          />
-        </div>
+        <label>
+          Expandable
+          <input type="checkbox" />
+        </label>
+        <label>
+          Downsizeable
+          <input type="checkbox" />
+        </label>
       </div>
-      <div className="buttons">
+      <div className="actions">
         <button className="erase">Erase All</button>
         <button className="create">Create</button>
       </div>
     </div>
   );
-}
+};
 
 export default BuildingManager;

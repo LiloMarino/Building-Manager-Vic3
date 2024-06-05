@@ -1,20 +1,19 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Layout from "./Layout";
-import BuildingManager from "./views/buildingmanager";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React from 'react';
+import Sidebar from './components/Sidebar';
+import BuildingManager from './views/buildingmanager';
+import Header from './components/Header';
+import './assets/styles/buildingmanager.css';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <Router>
-      <Layout>
-        <Routes>
-          <Route index element={<BuildingManager />} />
-          {/* Adicione mais rotas conforme necessário */}
-        </Routes>
-      </Layout>
-    </Router>
+    <div className="app">
+      <Header />
+      <div className="main-content d-flex">
+        <Sidebar />
+        <BuildingManager />
+      </div>
+    </div>
   );
-}
+};
 
 export default App;

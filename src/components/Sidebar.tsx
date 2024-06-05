@@ -3,20 +3,10 @@ import { Nav, Navbar } from "react-bootstrap";
 
 const Sidebar: React.FC = () => {
   return (
-    <div className="d-flex flex-column min-vh-100 p-3 text-bg-dark">
-      <Navbar.Brand
-        href="/"
-        className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
-      >
-        <span className="fs-4">Sidebar</span>
-      </Navbar.Brand>
-      <hr />
+    <div className="d-flex flex-column text-bg-dark sidebar">
       <Nav className="nav nav-pills flex-column mb-auto">
         <Nav.Item>
-          <Nav.Link
-            href="/Home"
-            className="nav-link active"
-          >
+          <Nav.Link href="/Home" className="nav-link active">
             Home
           </Nav.Link>
         </Nav.Item>
@@ -41,7 +31,6 @@ const Sidebar: React.FC = () => {
           </Nav.Link>
         </Nav.Item>
       </Nav>
-      <hr />
     </div>
   );
 };
