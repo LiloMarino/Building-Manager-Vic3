@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav, Navbar } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 
 const Sidebar: React.FC = () => {
   return (
@@ -28,6 +28,11 @@ const Sidebar: React.FC = () => {
         <Nav.Item>
           <Nav.Link href="/Customers" className="nav-link text-white">
             Customers
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/Goods" className="nav-link text-white">
+            Goods
           </Nav.Link>
         </Nav.Item>
       </Nav>
