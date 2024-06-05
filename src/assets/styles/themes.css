@@ -15,7 +15,23 @@
     --card-bg: #ffffff;
     --card-text-color: #000000;
 }
+
+/* Estilos para o tema claro */
+.light-header {
+    background-color: #f8f9fa;
+    color: #000000;
+  }
   
+  /* Estilos para o tema escuro */
+  .dark-header {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  
+  .white-text {
+    color: #ffffff;
+  }  
+
 /* Aplicar as variáveis CSS */
 body {
     background-color: var(--background-color);

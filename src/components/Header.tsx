@@ -10,8 +10,10 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ darkMode, handleToggle }) => {
   return (
-    <Navbar bg="light" expand="lg" className="px-3">
-      <Navbar.Brand href="/">Building Manager Victoria 3</Navbar.Brand>
+    <Navbar bg={darkMode ? "dark" : "light"} expand="lg" className="px-3">
+      <Navbar.Brand href="/" className={darkMode ? "white-text" : ""}>
+        Building Manager Victoria 3
+      </Navbar.Brand>
       <Form className="d-flex ms-auto">
         <FormControl
           type="search"
