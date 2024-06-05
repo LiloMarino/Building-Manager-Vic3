@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import './buildingmanager.css';
+import '../assets/styles/buildingmanager.css';
 
 function BuildingManager() {
   const [expandable, setExpandable] = useState(false);
   const [downsizeable, setDownsizeable] = useState(false);
 
   return (
-    <div className="building-manager">
+    <div className="building-manager min-vh-100">
       <h1>Fábrica de construção</h1>
       <div className="stats">
         <div className="stat">
