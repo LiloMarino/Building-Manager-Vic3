@@ -1,0 +1,33 @@
+/* Tema Claro */
+:root.light-theme {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --navbar-bg: #f8f9fa;
+    --card-bg: #f8f9fa;
+    --card-text-color: #000000;
+}
+  
+/* Tema Escuro */
+:root.dark-theme {
+    --background-color: #343a40;
+    --text-color: #ffffff;
+    --navbar-bg: #343a40;
+    --card-bg: #ffffff;
+    --card-text-color: #000000;
+}
+  
+/* Aplicar as variáveis CSS */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+  
+.navbar {
+    background-color: var(--navbar-bg) !important;
+}
+  
+/* Adicione uma classe para os cards */
+.stat {
+    background-color: var(--card-bg);
+    color: var(--card-text-color);
+}

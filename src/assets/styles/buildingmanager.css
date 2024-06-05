@@ -7,6 +7,7 @@
   height: 100vh;
   margin: 0; /* Certifique-se de remover margens */
   padding: 0; /* Certifique-se de remover padding */
+  background-color: var(--background-color);
 }
 
 .main-content {
@@ -16,8 +17,8 @@
 
 .sidebar {
   width: 250px;
-  background: #343a40;
-  color: white;
+  background: var(--navbar-bg);
+  color: var(--text-color);
   height: calc(100vh - 56px); /* Subtrai a altura do header */
   margin: 0; /* Remover margens */
   padding: 0; /* Remover padding */
@@ -26,6 +27,7 @@
 .building-manager {
   flex-grow: 1;
   padding: 20px;
+  color: var(--text-color); /* Ajustar a cor do texto */
 }
 
 .stats {
@@ -36,7 +38,8 @@
 .stat {
   flex: 1;
   margin: 0 10px;
-  background: #f8f9fa;
+  background: var(--card-bg);
+  color: var(--card-text-color);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
