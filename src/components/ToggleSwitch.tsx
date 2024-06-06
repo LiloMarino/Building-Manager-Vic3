@@ -1,6 +1,5 @@
-// ToggleSwitch.tsx
 import React, { useState } from 'react';
-import './ToggleSwitch.css';
+import '../assets/styles/toggleswitch.css';
 
 const ToggleSwitch: React.FC = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -10,10 +9,10 @@ const ToggleSwitch: React.FC = () => {
   };
 
   return (
-    <label className="ui-switch">
+    <label className="toggle-switch">
       <input type="checkbox" checked={isChecked} onChange={handleToggle} />
-      <span className="slider">
-        <span className="circle"></span>
+      <span className="toggle-switch-background">
+        <span className="toggle-switch-handle"></span>
       </span>
     </label>
   );

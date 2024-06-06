@@ -7,7 +7,7 @@ import './assets/styles/buildingmanager.css';
 import './assets/styles/themes.css'; // Importe o CSS dos temas
 import CreateGoods from './views/CreateGoods';
 import ListGoods from './views/ListGoods';
-import ToggleSwitch from './components/ToggleSwitch';
+
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(false);

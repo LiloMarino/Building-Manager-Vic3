@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import ToggleSwitch from '../components/ToggleSwitch';
 
 const CreateGoods: React.FC = () => {
   return (
@@ -45,7 +46,7 @@ const CreateGoods: React.FC = () => {
                 <Form.Label>Tradeable</Form.Label>
               </Col>
               <Col>
-                <Form.Switch></Form.Switch>
+                <ToggleSwitch></ToggleSwitch>
               </Col>
             </Row>
           </Form.Group>
@@ -55,7 +56,7 @@ const CreateGoods: React.FC = () => {
                 <Form.Label>Fixed Price</Form.Label>
               </Col>
               <Col>
-                <Form.Switch></Form.Switch>
+                <ToggleSwitch></ToggleSwitch>
               </Col>
             </Row>
           </Form.Group>
@@ -65,7 +66,7 @@ const CreateGoods: React.FC = () => {
                 <Form.Label>Local</Form.Label>
               </Col>
               <Col>
-                <Form.Switch></Form.Switch>
+                <ToggleSwitch></ToggleSwitch>
               </Col>
             </Row>
           </Form.Group>
