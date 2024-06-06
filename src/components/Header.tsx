@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Form, FormControl, Button } from "react-bootstrap";
 import { FaUserCircle } from "react-icons/fa";
-import "../assets/styles/toggleSwitch.css"; // Importe o CSS
+import "../assets/styles/toggleswitch.css"; // Importe o CSS
 import "../assets/styles/profileMenu.css"; // Importe o CSS do menu de perfil
 
 interface HeaderProps {
@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, handleToggle }) => {
 
   return (
     <Navbar bg={darkMode ? "dark" : "light"} expand="lg" className="px-3">
-      <Navbar.Brand href="/" className={darkMode ? "text-white" : ""}>
+      <Navbar.Brand href="/" className={darkMode ? "white-text" : ""}>
         Building Manager Victoria 3
       </Navbar.Brand>
       <Form className="d-flex ms-auto">
