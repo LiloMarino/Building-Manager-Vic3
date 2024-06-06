@@ -3,9 +3,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import BuildingManager from './views/buildingmanager';
 import Header from './components/Header';
-import Goods from './components/Goods';
 import './assets/styles/buildingmanager.css';
 import './assets/styles/themes.css'; // Importe o CSS dos temas
+import CreateGoods from './views/CreateGoods';
+import ListGoods from './views/ListGoods';
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -28,13 +29,14 @@ const App: React.FC = () => {
     <Router>
       <div className="app">
         <Header darkMode={darkMode} handleToggle={handleToggle} />
-        <div className="main-content d-flex">
+        <div className="main-content">
           <Sidebar />
-          <div className="content">
+          <div >
             <Routes>
               <Route path="/" element={<BuildingManager />} />
               <Route path="/Home" element={<BuildingManager />} />
-              <Route path="/Goods" element={<Goods />} />
+              <Route path="/Goods" element={<CreateGoods  />} />
+              <Route path="/ListGoods" element={<ListGoods />} />
             </Routes>
           </div>
         </div>

@@ -11,28 +11,13 @@ const Sidebar: React.FC = () => {
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/Dashboard" className="nav-link text-white">
-            Dashboard
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/Orders" className="nav-link text-white">
-            Orders
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/Products" className="nav-link text-white">
-            Products
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/Customers" className="nav-link text-white">
-            Customers
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
           <Nav.Link href="/Goods" className="nav-link text-white">
             Goods
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/ListGoods" className="nav-link text-white">
+            List Goods
           </Nav.Link>
         </Nav.Item>
       </Nav>
