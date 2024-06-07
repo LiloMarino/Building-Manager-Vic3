@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Navbar, Form, FormControl, Button } from "react-bootstrap";
 import { FaUserCircle } from "react-icons/fa";
 import "../assets/styles/toggleswitch.css"; // Importe o CSS
-import "../assets/styles/profileMenu.css"; // Importe o CSS do menu de perfil
+import "../assets/styles/profilemenu.css"; // Importe o CSS do menu de perfil
 
 interface HeaderProps {
   darkMode: boolean;
