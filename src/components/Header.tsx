@@ -17,7 +17,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, handleToggle }) => {
   };
 
   return (
-    <Navbar bg={darkMode ? "dark" : "light"} expand="lg" className="px-3">
+    <Navbar bg={darkMode ? "dark" : "light"} className="px-3" style={{ height: '100%' }}>
       <Navbar.Brand href="/" className={darkMode ? "white-text" : ""}>
         Building Manager Victoria 3
       </Navbar.Brand>
