@@ -3,10 +3,10 @@ import { Nav } from "react-bootstrap";
 
 const Sidebar: React.FC = () => {
   return (
-    <div className="d-flex flex-column text-bg-dark sidebar">
+    <div className="d-flex flex-column text-bg-dark">
       <Nav className="nav nav-pills flex-column mb-auto">
         <Nav.Item>
-          <Nav.Link href="/Home" className="nav-link active">
+          <Nav.Link href="/Home" className="nav-link text-white">
             Home
           </Nav.Link>
         </Nav.Item>

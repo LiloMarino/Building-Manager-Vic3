@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import "../assets/styles/buildingmanager.css";
 
 const BuildingManager: React.FC = () => {
   return (

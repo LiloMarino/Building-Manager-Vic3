@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Sidebar from './components/Sidebar';
-import BuildingManager from './views/BuildingManager';
-import Header from './components/Header';
-import './assets/styles/buildingmanager.css';
-import './assets/styles/themes.css'; // Importe o CSS dos temas
-import CreateGoods from './views/CreateGoods';
-import ListGoods from './views/ListGoods';
-
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Sidebar from "./components/Sidebar";
+import BuildingManager from "./views/BuildingManager";
+import Header from "./components/Header";
+import "./assets/styles/layout.css";
+import CreateGoods from "./views/CreateGoods";
+import ListGoods from "./views/ListGoods";
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -28,18 +26,20 @@ const App: React.FC = () => {
 
   return (
     <Router>
-      <div className="app">
-        <Header darkMode={darkMode} handleToggle={handleToggle} />
-        <div className="main-content d-flex">
+      <div className="layout-grid">
+        <div id="header">
+          <Header darkMode={darkMode} handleToggle={handleToggle} />
+        </div>
+        <div id="sidebar">
           <Sidebar />
-          <div className="content">
-            <Routes>
-              <Route path="/" element={<BuildingManager />} />
-              <Route path="/Home" element={<BuildingManager />} />
-              <Route path="/Goods" element={<CreateGoods />} />
-              <Route path="/ListGoods" element={<ListGoods />} />
-            </Routes>
-          </div>
+        </div>
+        <div id="main-content">
+          <Routes>
+            <Route path="/" element={<BuildingManager />} />
+            <Route path="/Home" element={<BuildingManager />} />
+            <Route path="/Goods" element={<CreateGoods />} />
+            <Route path="/ListGoods" element={<ListGoods />} />
+          </Routes>
         </div>
       </div>
     </Router>
@@ -47,4 +47,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-
