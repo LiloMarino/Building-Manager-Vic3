@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
-import BuildingManager from "./views/BuildingManager";
+import BuildingManager from "./views/buildingmanager";
 import Header from "./components/Header";
 import "./assets/styles/layout.css";
 import CreateGoods from "./views/CreateGoods";

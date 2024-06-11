@@ -16,14 +16,14 @@
 }
 
 #sidebar {
-  background-color: #385b94;
+  background-color: #22252b;
   grid-area: sidebar;
   height: 100%;
   overflow: auto;
 }
 
 #main-content {
-  background-color: #d0d9e6;
+  background-color: #ffffff;
   grid-area: main-content;
   height: 100%;
   overflow: auto;
