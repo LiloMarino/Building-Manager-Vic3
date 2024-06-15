@@ -5,7 +5,7 @@ import DDS from "../assets/img/DDS.png";
 const CreateGoods: React.FC = () => {
   return (
     <Container fluid className="p-5">
-      <h1 style={{ textDecorationLine: "underline" }}>Goods</h1>
+      <h1 className="text-decoration-underline fs-2">Goods</h1>
       <Form className="container-fluid mt-4">
         <Row>
           <Col>
