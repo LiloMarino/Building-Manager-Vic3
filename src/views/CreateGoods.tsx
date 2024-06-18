@@ -1,6 +1,7 @@
 import { Button, Col, Container, Form, Row, Stack } from "react-bootstrap";
 import ToggleSwitch from "../components/ToggleSwitch";
 import DDS from "../assets/img/DDS.png";
+import { GoodCategory } from "../types";
 
 const CreateGoods: React.FC = () => {
   return (
@@ -26,7 +27,13 @@ const CreateGoods: React.FC = () => {
                 Category
                 <span style={{ color: "red", fontWeight: "bold" }}>*</span>
               </Form.Label>
-              <Form.Select></Form.Select>
+              <Form.Select>
+                {Object.entries(GoodCategory).map(([key, value]) => (
+                  <option key={key} value={value}>
+                    {value}
+                  </option>
+                ))}
+              </Form.Select>
             </Form.Group>
             <Form.Group className="mb-3">
               <Form.Label>Consumption tax cost</Form.Label>

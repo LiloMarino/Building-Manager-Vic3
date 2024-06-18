@@ -1,11 +1,11 @@
-enum GoodCategory {
+export enum GoodCategory {
   Staple = "staple",
   Industrial = "industrial",
   Luxury = "luxury",
   Military = "military",
 }
 
-interface Good {
+export interface Good {
   name_id: string;
   name_loc: string;
   texture_path: string;
